@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Eric do Ouro" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta
+      name="description"
+      content="EUA Afora - Um rede social interativa para contar sua história"
+    />
+    <title>EUA Afora</title>
+
+    <link rel="shortcuticon" href="favicon.ico" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+
+            <img class="header__logo" src="./images/Vector.png" alt="Logo Aroud">
+
+        </header>
+
+      <main class="content">
+        <section class="profile">
+          <img
+            class="profile__avatar"
+            src="./images/image_perfil.jpg"
+            alt="Perfil do usuario"
+          />
+
+          <div class="profile__info">
+            <div class="profile__info-text">
+              <h2 class="profile__info-name">Jacques Cousteau</h2>
+              <button class="profile__edit">
+                <img src="./images/edit.png" alt="Edit" />
+              </button>
+            </div>
+            <p class="profile__info-profession">Explorador</p>
+          </div>
+          <button class="profile__add">
+            <img src="./images/add.png" alt="Add" />
+          </button>
+        </section>
+        <section class="elements">
+          <div class="element">
+            <div class="element__item">
+              <img
+                src="./images/img-01.png"
+                alt="Paisagem com avores coniferas e motenha ao fundo"
+              />
+              <div class="element__item-info">
+                <p class="element__intem-info-text">Vale de Yosemite</p>
+                <button class="element__button">
+                  <img
+                    class="element__button-img"
+                    id="likeBtn"
+                    src="./images/like.svg"
+                    alt="Like"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="element__item">
+              <img src="./images/img-02.png" alt="Lago de montenhas ao redor" />
+              <div class="element__item-info">
+                <p class="element__intem-info-text">Lago Louise</p>
+
+                <button class="element__button">
+                  <img
+                    class="element__button-img"
+                    src="./images/like.svg"
+                    alt="Like"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="element__item">
+              <img
+                src="./images/img-03.png"
+                alt="Por do sol entre as Montanhas"
+              />
+              <div class="element__item-info">
+                <p class="element__intem-info-text">Montanhas Care</p>
+
+                <button class="element__button">
+                  <img
+                    class="element__button-img"
+                    src="./images/like.svg"
+                    alt="Like"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="element__item">
+              <img
+                src="./images/img-04.png"
+                alt="Noite estrelada em meio as montanhas"
+              />
+              <div class="element__item-info">
+                <p class="element__intem-info-text">Latemar</p>
+
+                <button class="element__button">
+                  <img
+                    class="element__button-img"
+                    src="./images/like.svg"
+                    alt="Like"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="element__item">
+              <img
+                src="./images/img-05.png"
+                alt="Beira de um lago com montanhas ao redor"
+              />
+              <div class="element__item-info">
+                <p class="element__intem-info-text">Vanoise Nationa</p>
+
+                <button class="element__button">
+                  <img
+                    class="element__button-img"
+                    src="./images/like.svg"
+                    alt="Like"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="element__item">
+              <img
+                src="./images/img-06.png"
+                alt="Pier com barcos, e lago com montanhas ao redor"
+              />
+              <div class="element__item-info">
+                <p class="element__intem-info-text">Lago di Braies</p>
+
+                <button class="element__button">
+                  <img
+                    class="element__button-img"
+                    src="./images/like.svg"
+                    alt="Like"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__text">Eric do Ouro © 2025 Around The U.S.</p>
+      </footer>
+
+      <div class="popup">
+        <div class="popup__container">
+          <button class="popup__close-button">
+            <img src="./images/close.png" alt="Close" />
+          </button>
+          <h3 class="popup__edit">Editar perfil</h3>
+
+          <form class="form popup__form">
+            <div class="form__fields">
+              <input
+                id="name"
+                class="form__fields-input"
+                type="text"
+                placeholder="Nome"
+              />
+              <input
+                id="about"
+                class="form__fields-input"
+                type="text"
+                placeholder="Sobre mim"
+              />
+            </div>
+
+            <button class="form__submit">Salvar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup popup-add-card">
+        <div class="popup__container">
+          <button class="popup__close-button popup-add-card__close-button">
+            <img src="./images/close.png" alt="Close" />
+          </button>
+          <h3 class="popup__edit">Novo cartão</h3>
+
+          <form class="form popup__form">
+            <div class="form__fields">
+              <input
+                id="title"
+                class="form__fields-input"
+                type="text"
+                placeholder="Nome"
+              />
+              <input
+                id="about"
+                class="form__fields-input"
+                type="url"
+                placeholder="Imagem"
+              />
+            </div>
+
+            <button class="form__submit popup__form-button">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

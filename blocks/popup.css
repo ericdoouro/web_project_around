@@ -1,53 +1,81 @@
+/* Estilo base para o popup (invisível por padrão) */
 .popup {
   display: none;
-  position: absolute;
+  position: fixed;
   inset: 0;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.popup_opened {
-  display: flex;
+  z-index: 100;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Quando a classe .popup_opened for adicionada, mostra o popup */
+.popup.popup_opened {
+  display: flex;
+}
+
+/* Estilização interna do container do popup */
 .popup__container {
   display: flex;
   flex-direction: column;
   background-color: #fff;
   width: 430px;
-  height: 330px;
+  height: 322px;
   border-radius: 1rem;
   position: relative;
-  padding: 34px 35px 36px;
+  padding: 25px 22px 25px;
   box-sizing: border-box;
 }
 
+/* Outros estilos auxiliares (ajuste conforme desejar) */
 .popup__close-button {
-  width: 40px;
-  height: 40px;
-  background: transparent;
+  background: none;
   border: none;
+  cursor: pointer;
   position: absolute;
-  top: -40px;
-  right: -40px;
+  top: -41px;
+  right: -41px;
+  padding: 0;
 }
 
-.popup__edit {
-  margin: 0;
-  font-family: 'Inter';
+.popup__title {
+  font-family: Inter;
   font-weight: 900;
-  font-size: 24px;
-  margin-bottom: 54px;
+  font-size: 18px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.popup__image {
+  max-width: 100%;
+  max-width: 60vh;
+}
+
+.popup__container-image {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  max-width: 75vw;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.popup__image-text {
+  justify-content: flex-start;
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: left;
 }
 
 @media screen and (max-width: 320px) {
 
   .popup__container {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
     width: 282px;
     height: 322px;
     border-radius: 1rem;
@@ -59,10 +87,18 @@
   .popup__close-button {
     width: 26px;
     height: 26px;
-    background: transparent;
-    border: none;
-    position: absolute;
     top: -50px;
-    right: -19px;
+    right: 20px;
+  }
+
+  .popup__container-image {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    max-width: 75vw;
+    max-height: 75vh;
+    width: auto;
+    height: auto;
+    padding: 0;
   }
 }

@@ -44,16 +44,23 @@
     line-height: 21.78px;
 }
 
-.profile__edit {
+.popup-edit-profile {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.popup-edit-profile-button {
     width: 24px;
     height: 24px;
     border: 2px solid #ffffff;
     background: transparent;
     margin-bottom: 6px;
     padding: 0;
+  }
+
+.popup-edit-profile-button:hover {
+    opacity: 60%;
 }
 
 .profile__add {
@@ -62,6 +69,10 @@
     border: 2px solid #ffffff;
     background: transparent;
     margin-left: auto;
+}
+
+.profile__add:hover {
+    opacity: 60%;
 }
 
 @media screen and (max-width: 1024px) {

@@ -10,6 +10,7 @@
 .form__fields {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 29px;
     width: 100%;
 }
@@ -32,6 +33,11 @@
     background-color: black;
     color: white;
     outline: none;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    opacity: 60%;
 }
 
 @media screen and (max-width: 320px) {
@@ -43,19 +49,8 @@
     }
 
     .form__fields {
-        display: flex;
-        flex-direction: column;
         gap: 30px;
-        width: 100%;
-    }
 
-    .form__fields-input {
-        width: 100%;
-        max-width: 238px;
-        height: 30px;
-        border: none;
-        border-bottom: 1px solid #c2c2c2;
-        outline: none;
     }
 }
 

@@ -2,20 +2,25 @@
 
 Este é um projeto de perfil de usuário com layout responsivo, desenvolvido com HTML, CSS e JavaScript. A interface se adapta automaticamente a telas menores (como celulares e tablets), utilizando Media Queries para garantir uma boa experiência em diferentes tamanhos de tela.
 
-A página inclui botões funcionais para adicionar usuários e imagens, cujas interações são implementadas com JavaScript, proporcionando uma navegação mais dinâmica e interativa.
+Esta página web simula um perfil de usuário com funcionalidades completas, incluindo edição de dados, adicionar cards com imagem, curtir publicações e visualização em tela cheia. A navegação é fluida e interativa, com popups dinâmicos que podem ser fechados tanto por botão quanto clicando fora da área ativa ou pressionando a tecla Esc.
 
-Durante o desenvolvimento, foram adicionadas diversas funcionalidades importantes, como:
+Para garantir uma experiência acessível, foram implementadas validações de formulário com mensagens de erro claras, restrições de caracteres e feedbacks visuais — auxiliando o usuário a preencher os campos corretamente.
 
-- Botão de curtida (like) nos cartões;
-- Edição de perfil, permitindo alterar nome e profissão;
-- Adição de novos cards com imagem e título;
-- Visualização ampliada da imagem em um popup ao clicar no card.
+# Funcionalidades Implementadas
+
+   - Edição de Perfil — Altere nome e ocupação.
+   - Criação de Cards — Adicione novos cards com imagem e título.
+   - Curtir Cards — Sistema de curtida com feedback visual.
+   - Zoom em Imagem — Ampliação em popup ao clicar na imagem.
+   - Fechamento Inteligente de Popups — Feche ao clicar fora, no botão ou pressionando Esc.
+   - Mensagens de Erro — Validação ativa com destaque visual e mensagens amigáveis.
 
 # Tecnologias utilizadas
 
 - HTML
 - CSS (com Media Queries)
 - JavaScript
+- Validate.js
 
 # Funcionalidades
 
@@ -27,7 +32,11 @@ Durante o desenvolvimento, foram adicionadas diversas funcionalidades importante
 
 # Responsividade
 
-O layout utiliza Media Queries para adaptar a interface quando a largura da tela é inferior a 800px. Os elementos passam a ser empilhados verticalmente e centralizados, garantindo boa legibilidade e usabilidade em dispositivos móveis.
+O layout responde automaticamente à largura da tela, especialmente abaixo de 800px. Nestes casos:
+
+- Os elementos se reorganizam em colunas verticais;
+- Os conteúdos são centralizados;
+- A navegação e leitura permanecem confortáveis em smartphones e tablets.
 
 ## Como usar
 

@@ -20,14 +20,12 @@
   flex-direction: column;
   background-color: #fff;
   width: 430px;
-  height: 322px;
   border-radius: 1rem;
   position: relative;
-  padding: 25px 22px 25px;
+  padding: 34px 36px 36px;
   box-sizing: border-box;
 }
 
-/* Outros estilos auxiliares (ajuste conforme desejar) */
 .popup__close-button {
   background: none;
   border: none;

@@ -87,28 +87,33 @@
             </button>
             <h3 class="popup__title">Editar perfil</h3>
             <form class="form popup__form" id="edit-profile-form" name="edit-profile-form">
-              <div class="form__fields">
-                <input
-                  type="text"
-                  class="form__fields-input"
-                  id="name"
-                  name="name"
-                  placeholder="Nome"
-                  required
-                  minlength="2"
-                  maxlength="40"
-                />
-                <input
-                  type="text"
-                  class="form__fields-input"
-                  id="about"
-                  name="about"
-                  placeholder="Sobre mim"
-                  required
-                  minlength="2"
-                  maxlength="200"
-                />
-                <button type="submit" class="form__submit popup__form-button">Salvar</button>
+                <div class="form__fields">
+                  <input
+                    type="text"
+                    class="form__fields-input"
+                    id="name"
+                    name="name"
+                    placeholder="Nome"
+                    required
+                    minlength="2"
+                    maxlength="40"
+                  />
+                  <span class="form__error" id="name-error"></span>
+
+                  <input
+                    type="text"
+                    class="form__fields-input"
+                    id="about"
+                    name="about"
+                    placeholder="Sobre mim"
+                    required
+                    minlength="2"
+                    maxlength="200"
+                  />
+                  <span class="form__error" id="about-error"></span>
+                  
+                  <button type="submit" class="form__submit popup__form-button">Salvar</button>
+                </div>
               </form>
             </div>
           </div>
@@ -130,6 +135,8 @@
                     type="text"
                     placeholder="Nome" required
                   />
+                  <span class="form__error" id="title-error"></span>
+
                   <input
                     id="image-link"
                     name="card-link"
@@ -137,6 +144,8 @@
                     type="url"
                     placeholder="Imagem" required
                   />
+                  <span class="form__error" id="image-link-error"></span>
+                  
               </div>
               <button class="form__submit popup__form-button" aria-label="Novo Card">Salvar</button>
             </form>   
@@ -153,6 +162,7 @@
           </div>
         </div>
     </div> 
-    <script src="./scripts/index.js"></script>   
+    <script src="./scripts/validate.js"></script>
+    <script type="module" src="./scripts/index.js"></script>   
   </body>
 </html>

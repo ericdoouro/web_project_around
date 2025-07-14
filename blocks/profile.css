@@ -5,6 +5,7 @@
     color: #fff;
     gap: 30px;
     border-top: 1px solid #545454;
+    padding: 40px 40px 50px 40px;
 }
 
 .profile__avatar {
@@ -34,6 +35,9 @@
     font-weight: 500;
     line-height: 48px;
     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .profile__info-profession {
@@ -42,6 +46,9 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 21.78px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .popup-edit-profile {
@@ -81,7 +88,6 @@
         align-items: center;
         max-width: 800px;
         width: 100%;
-        padding: 40px 40px 50px 40px;
         gap: 30px;
         box-sizing: border-box;
     }

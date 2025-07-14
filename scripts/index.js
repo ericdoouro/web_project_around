@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const nameInput = editProfileForm.querySelector('#name');
   const aboutInput = editProfileForm.querySelector('#about');
-
+  
   // Função para abrir popup de imagem ao clicar no card
   function handleCardClick(name, link) {
     const popupImage = popupImageView.querySelector('.popup__image');

@@ -60,6 +60,10 @@
   .element__button-img.liked {
     filter: brightness(0);
   }
+
+  .element__button_active .element__button-img {
+    content: url('../images/like2.png');
+  }
   
   .element__delete-button {
     position: absolute;

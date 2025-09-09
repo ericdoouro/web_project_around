@@ -1,26 +1,22 @@
-export const initialCards = [
-  {
-    name: "Vale de Yosemite",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_yosemite.jpg"
-  },
-  {
-    name: "Lago Louise",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_lake-louise.jpg"
-  },
-  {
-    name: "Montanhas Carecas",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_bald-mountains.jpg"
-  },
-  {
-    name: "Latemar",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_latemar.jpg"
-  },
-  {
-    name: "Parque Nacional da Vanoise",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_vanoise.jpg"
-  },
-  {
-    name: "Lago di Braies",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_lago.jpg"
-  }
-];
+export const configValidation = {
+  formSelector: '.popup__form',
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.popup__form-button',
+  inactiveButtonClass: 'popup__form-button_disabled',
+  inputErrorClass: 'popup__input_type_error',
+  errorClass: 'popup__error_visible'
+};
+
+export const editButton = document.querySelector('.popup__edit-profile-button');
+export const addButton = document.querySelector('.profile__add');
+
+export const popupEditProfile = document.querySelector('.popup-edit-profile');
+export const popupAddCard = document.querySelector('.form__fields');
+
+export const profileForm = popupEditProfile.querySelector('.popup__form');
+export const cardForm = document.querySelector('#add-card-form');
+
+export const nameInput = popupEditProfile.querySelector('.form__fields-input');
+export const aboutInput = popupEditProfile.querySelector('.form__fields-input');
+
+export const cardsContainer = document.querySelector('.cards');

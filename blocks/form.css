@@ -15,7 +15,7 @@
 
 .form__fields-input {
     width: 100%;
-
+    font-family: 'Inter';
     height: 27px;
     border: none;
     border-bottom: 2px solid #c2c2c2;
@@ -69,11 +69,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .form__fields {
-        gap: 30px;
-
     }
 }
 

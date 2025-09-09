@@ -53,16 +53,17 @@
     cursor: pointer;
   }
   
-  .element__button-img:hover {
+  .element__like-img:hover {
     opacity: 60%;
   }
   
-  .element__button-img.liked {
+  .element__like-img.liked {
     filter: brightness(0);
   }
 
-  .element__button_active .element__button-img {
-    content: url('../images/like2.png');
+  .element__button_active .element__like-img {
+    background-image: url('../images/like2.png');
+    background-color: blueviolet;
   }
   
   .element__delete-button {

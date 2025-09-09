@@ -40,11 +40,11 @@
 }
 
 .popup__title {
-  font-family: Inter;
+  font-family: 'Inter';
   font-weight: 900;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 100%;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .popup__image {
@@ -78,7 +78,6 @@
 
   .popup__container {
     width: 282px;
-    height: 322px;
     border-radius: 1rem;
     position: relative;
     padding: 25px 22px 25px;
@@ -86,8 +85,6 @@
   }
 
   .popup__close-button {
-    width: 26px;
-    height: 26px;
     top: -50px;
     right: 20px;
   }

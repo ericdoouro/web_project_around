@@ -20,20 +20,3 @@ export default class PopupWithConfirmation extends Popup {
     });
   }
 }
-
-
-// setEventListeners() {
-//   super.setEventListeners();
-//   if (this._form) {  
-//     this._form.addEventListener("submit", (evt) => {
-//       evt.preventDefault();
-//       if (this._handleSubmit) {
-//         this._handleSubmit();
-//       }
-//     });
-//   } 
-//   else {
-//     console.error("PopupWithConfirmation: Nenhum formulário encontrado dentro do popup!");
-//   }
-// }
-// }

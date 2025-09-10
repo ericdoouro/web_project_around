@@ -25,11 +25,11 @@ export default class Card {
   }
 
   generateCard() {
-    this._element = document.querySelector("#card-template").content.cloneNode(true);
-    this._cardImage = this._element.querySelector(".element__item-img");
-    this._likeButton = this._element.querySelector(".element__like-img");
-    this._deleteButton = this._element.querySelector(".element__delete-button");
-    this._cardText = this._element.querySelector(".element__item-info-text");
+    const template = document.querySelector("#card-template").content.cloneNode(true);
+    this._cardImage = template.querySelector(".element__item-img");
+    this._likeButton = template.querySelector(".element__like-img");
+    this._deleteButton = template.querySelector(".element__delete-button");
+    this._cardText = template.querySelector(".element__item-info-text");
     const cardList = document.querySelector(".cards");
   
     this._cardImage.src = this._link;
@@ -37,9 +37,11 @@ export default class Card {
     this._cardText.textContent = this._name;
   
     this._setEventListeners();
-    cardList.prepend(this._element);
+    cardList.prepend(template);
 
-    return this._element;
+    this._element = cardList.firstElementChild;
+
+    return template;
   }
   
   _handleDeleteClick() {
@@ -64,7 +66,6 @@ export default class Card {
 
   setLikeCard(isLiked) {
     this.isLiked = isLiked;
-    
 
     if (this.isLiked) {
       this._likeButton.src = "../images/like2.png";
@@ -79,6 +80,6 @@ export default class Card {
 
   removeCard() {
     console.log(this._element)
-    this._element.firstChild.remove();
+    this._element.remove();
   }
 }

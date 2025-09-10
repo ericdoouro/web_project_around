@@ -136,12 +136,9 @@ function createCard(data) {
       }
     },
     (cardInstance) => {
-      console.log("teste")
       popupConfirmDelete.setSubmitAction(() => {
-        console.log("teste-01")
         api.deleteCard(cardInstance.getId())
           .then(() => {
-            console.log("teste-02")
             cardInstance.removeCard();
             popupConfirmDelete.close();
           })

@@ -5,24 +5,19 @@ import PopupWithConfirmation from "./PopupWithConfirmation.js";
 import { avatarEditButton } from "./constants.js";
 import PopupWithForm from "./PopupWithForm.js";
 import UserInfo from "./UserInfo.js";
+import FormValidator from "./FormValidator.js";
+import { validationConfig } from "./constants.js";
 import api from "./Api.js";
 import {
-  profileEditButton,
-  profileAvatar,
-  addCardButton,
   profileName,
   profileProfession,
-  cardsContainer,
   cardTemplateSelector,
   editProfileForm,
   addCardForm
 } from "./constants.js";
 
 let currentUserId;
-let initialCards;
 let cardSection;
-
-
 
 // Instância do popup de avatar
 const popupAvatarForm = new PopupWithForm(".popup__edit-avatar", (formData) => {
@@ -57,6 +52,9 @@ Promise.all([api.getUserInfo(), api.getInitialCards()])
     userInfo.setUserInfo(userData);
     userInfo.setUserAvatar(userData.avatar);
     currentUserId = userData._id;
+
+    const userId = userData._id;
+
     // Lista de cartões
     cardSection = new Section(
       {
@@ -113,10 +111,11 @@ popupWithImage.setEventListeners();
 const popupConfirmDelete = new PopupWithConfirmation(".popup-delete");
 popupConfirmDelete.setEventListeners();
 
-function createCard(data) {
+function createCard(data, userId) {
   const card = new Card(
     data,
     "#card-template",
+    userId,
     currentUserId,
     cardTemplateSelector,
     (name, link) => popupWithImage.open(name, link),
@@ -149,6 +148,17 @@ function createCard(data) {
   );
   return card.generateCard();
 }
+
+// Validação dos formulários
+const profileFormValidator = new FormValidator(validationConfig, editProfileForm);
+profileFormValidator.enableValidation();
+
+const addCardFormValidator = new FormValidator(validationConfig, addCardForm);
+addCardFormValidator.enableValidation();
+
+const avatarFormElement = document.querySelector(".popup__edit-avatar form");
+const avatarFormValidator = new FormValidator(validationConfig, avatarFormElement);
+avatarFormValidator.enableValidation();
 
 // Formulários e botões
 document.querySelector(".popup__edit-profile-button").addEventListener("click", () => {

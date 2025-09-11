@@ -1,10 +1,11 @@
-const validationConfig = {
+export const validationConfig = {
   formSelector: ".form",
   inputSelector: ".form__fields-input",
   submitButtonSelector: ".form__submit",
+  inactiveButtonClass: "form__submit_disabled",
+  inputErrorClass: "form__fields-input_type_error",
+  errorClass: "form__error_visible"
 };
-
-export default validationConfig;
 
 // Botões principais
 export const profileEditButton = document.querySelector(".popup__edit-profile-button");

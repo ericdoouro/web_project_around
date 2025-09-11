@@ -2,10 +2,12 @@
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 20px;
-    max-width: 1920px;
-    background-color: #000;
     margin: 0 auto;
     position: relative;
+}
+
+body {
+    background-color: #000;
 }
 
 @media screen and (max-width: 320px) {

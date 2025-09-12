@@ -115,7 +115,6 @@ function createCard(data, userId) {
   const card = new Card(
     data,
     "#card-template",
-    userId,
     currentUserId,
     cardTemplateSelector,
     (name, link) => popupWithImage.open(name, link),

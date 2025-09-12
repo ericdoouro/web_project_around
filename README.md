@@ -1,42 +1,52 @@
 # Tripleten — Web Project Around
 
-Este é um projeto de perfil de usuário com layout responsivo, desenvolvido com HTML, CSS e JavaScript. A interface se adapta automaticamente a telas menores (como celulares e tablets), utilizando Media Queries para garantir uma boa experiência em diferentes tamanhos de tela.
+Este projeto consiste em um perfil de usuário com layout responsivo, desenvolvido em HTML, CSS, JavaScript e integração com APIs.
+A interface adapta-se automaticamente a diferentes tamanhos de tela (como celulares e tablets) por meio de Media Queries, garantindo uma boa experiência em qualquer dispositivo.
 
-Esta página web simula um perfil de usuário com funcionalidades completas, incluindo edição de dados, adicionar cards com imagem, curtir publicações e visualização em tela cheia. A navegação é fluida e interativa, com popups dinâmicos que podem ser fechados tanto por botão quanto clicando fora da área ativa ou pressionando a tecla Esc.
+Na Sprint 12, o projeto passou a funcionar integrado a APIs, permitindo maior interatividade e facilitando a navegação, edição e atualização dos componentes do aplicativo.
 
-Para garantir uma experiência acessível, foram implementadas validações de formulário com mensagens de erro claras, restrições de caracteres e feedbacks visuais — auxiliando o usuário a preencher os campos corretamente.
+A página simula um perfil de usuário com funcionalidades completas, incluindo edição de dados, adição de cards com imagens, curtidas e visualização em tela cheia.
+A navegação é fluida e interativa, com popups dinâmicos que podem ser fechados ao clicar no botão, fora da área ativa ou pressionando a tecla Esc.
+
+Para melhorar a acessibilidade, foram implementadas validações de formulário com mensagens de erro claras, limites de caracteres e feedbacks visuais — ajudando o usuário a preencher os campos corretamente.
 
 # Funcionalidades Implementadas
 
-   - Edição de Perfil — Altere nome e ocupação.
-   - Criação de Cards — Adicione novos cards com imagem e título.
-   - Curtir Cards — Sistema de curtida com feedback visual.
-   - Zoom em Imagem — Ampliação em popup ao clicar na imagem.
-   - Fechamento Inteligente de Popups — Feche ao clicar fora, no botão ou pressionando Esc.
-   - Mensagens de Erro — Validação ativa com destaque visual e mensagens amigáveis.
+- Edição de Perfil — Alterar nome e ocupação.
+- Criação de Cards — Adicionar novos cards com imagem e título.
+- Curtidas — Sistema de likes com feedback visual.
+- Visualização de Imagem — Ampliar imagens em popup.
+- Fechamento Inteligente de Popups — Fechamento via botão, clique externo ou tecla Esc.
+- Mensagens de Erro — Validações com destaque visual e feedback amigável.
+- Popup de Confirmação — Garantia de alterações antes da aplicação.
 
-# Tecnologias utilizadas
+# Tecnologias Utilizadas
 
-- HTML
-- CSS (com Media Queries)
-- JavaScript
+- HTML5
+- CSS3 (com Media Queries)
+- JavaScript (ES6+)
 - Validate.js
+- APIs integradas
 
-# Funcionalidades
+# Detalhes do Projeto
+- Perfil com foto, nome e descrição profissional.
+- Botões para editar perfil e adicionar cards.
+- Layout responsivo adaptado a múltiplos dispositivos.
+- Barra superior responsiva ocupando 100% da largura em telas pequenas.
 
-- Perfil com foto, nome e descrição profissional;
-- Botões para editar perfil e adicionar novos cards;
-- Layout responsivo para diferentes dispositivos;
-- Borda superior responsiva que cobre 100% da largura em telas pequenas;
-- Popups funcionais para edição de perfil, criação de novos cards e visualização de imagem em tela cheia.
+ Popups funcionais para:
+   - Edição de perfil;
+   - Criação de cards;
+   - Validação de alterações;
+   - Visualização de imagens em tela cheia.
 
 # Responsividade
+O layout adapta-se automaticamente à largura da tela, especialmente em dispositivos abaixo de 800px.
 
-O layout responde automaticamente à largura da tela, especialmente abaixo de 800px. Nestes casos:
-
-- Os elementos se reorganizam em colunas verticais;
-- Os conteúdos são centralizados;
-- A navegação e leitura permanecem confortáveis em smartphones e tablets.
+Nestes casos:
+   - Os elementos reorganizam-se em colunas verticais;
+   - O conteúdo é centralizado;
+   - A navegação e a leitura permanecem confortáveis em smartphones e tablets.
 
 ## Como usar
 
